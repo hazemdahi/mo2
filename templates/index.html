@@ -30,27 +30,16 @@
                 <h2>We wish we help you detect your water sample</h2> <br><br>
             </div>
             <div id="nav_section">
+                <form action="{{ url_for('predict')}}"method="post" style=" margin: auto;width: 100%;border: 3px solid rgba(0, 0, 0, 0);padding: 10px;">
                 <label>Put your Parameters</label> <br><br>
                 <input id="TEMP" type="text" maxlength="5" placeholder="TEMP value"/>
                 <input id="DO" type="text" maxlength="5" placeholder="DO value"/>
                 <input id="PH" type="text" maxlength="5" placeholder="PH value"/>
                 <input id="BOD" type="text" maxlength="5" placeholder="BOD value"/>
                 <input id="NO3" type="text" maxlength="5" placeholder="NO3 value"/>
-            </div>
-            <div id="nav_nav">
-                <input id="process" type="button" value="Process value"/>
-            </div>
-            <div id="nav_footer">
-                <label>Sample purification is</label> <br><br>
-                <div id="text_area"></div>
-            </div>
-        </div>
-        <div id="section">
-            <div id="section_header">
-                <input id="btn" type="button" value="show datails"/>
-            </div>
-            <div id="section_footer">
-                <div id="text_area2"></div>
+                <button type="submit" class="btn">Predict</button>
+                </form>
+            {{ prediction_text }}
             </div>
         </div>
     </body>
