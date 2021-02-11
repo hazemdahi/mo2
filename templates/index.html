@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Know your water 🥛</title>
+        <meta charset="utf-8">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    </head>
+    <body>
+        <video autoplay muted loop id="myVideo">
+          <source src="videos/Dark%20Water%20Surface%20Background%20-%20Free%20HD%20Video%20Clips%20&%20Stock%20Video%20Footage%20at%20Videezy!.mp4" type="video/mp4">
+        </video>
+        <header>
+            <div id="first_part">
+                <h2>
+                    <span>K</span>now &nbsp; <span>Y</span>our &nbsp; <span>w</span>ater 🥛
+                </h2>
+            </div>
+            <div id="second_part">
+                <ul>
+                    <a href="#"><li style="color: gold">Home</li></a>
+                    <a href="#"><li>Advices</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <a href="#"><li>Our persentation</li></a>
+                </ul>
+            </div>
+        </header>
+        <div id="nav">
+            <div id="nav_header">
+                <h2>We wish we help you detect your water sample</h2> <br><br>
+            </div>
+            <div id="nav_section">
+                <label>Put your Parameters</label> <br><br>
+                <input id="TEMP" type="text" maxlength="5" placeholder="TEMP value"/>
+                <input id="DO" type="text" maxlength="5" placeholder="DO value"/>
+                <input id="PH" type="text" maxlength="5" placeholder="PH value"/>
+                <input id="BOD" type="text" maxlength="5" placeholder="BOD value"/>
+                <input id="NO3" type="text" maxlength="5" placeholder="NO3 value"/>
+            </div>
+            <div id="nav_nav">
+                <input id="process" type="button" value="Process value"/>
+            </div>
+            <div id="nav_footer">
+                <label>Sample purification is</label> <br><br>
+                <div id="text_area"></div>
+            </div>
+        </div>
+        <div id="section">
+            <div id="section_header">
+                <input id="btn" type="button" value="show datails"/>
+            </div>
+            <div id="section_footer">
+                <div id="text_area2"></div>
+            </div>
+        </div>
+    </body>
+</html>
